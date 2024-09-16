@@ -1,0 +1,6 @@
+confluent.metadata.oauthbearer.login.oauth.scope
+spec.dependencies.mds.authentication.oauth.configuration.scopes
+
+
+
+curl --request POST --url 'http://keycloak:8080/realms/sso_test/protocol/openid-connect/token'      --header 'Content-Type: application/x-www-form-urlencoded'      --data-urlencode 'grant_type=client_credentials'      --data-urlencode 'client_id=ssologin'      --data-urlencode 'client_secret=KbLRih1HzjDC267PefuKU7QIoZ8hgHDK'
