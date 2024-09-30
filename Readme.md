@@ -102,8 +102,8 @@ kubectl create secret tls ca-pair-sslcerts \
 ### Secret Object MDS
 ```bash
 kubectl create secret generic mds-token \
-  --from-file=mdsPublicKey.pem=$TUTORIAL_HOME/certs/mds-publickey.txt \
-  --from-file=mdsTokenKeyPair.pem=$TUTORIAL_HOME/certs/mds-tokenkeypair.txt \
+  --from-file=mdsPublicKey.pem=$TUTORIAL_HOME/creds/mds-publickey.txt \
+  --from-file=mdsTokenKeyPair.pem=$TUTORIAL_HOME/creds/mds-tokenkeypair.txt \
   --namespace operator
 ```
 
