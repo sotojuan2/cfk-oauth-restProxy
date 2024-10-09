@@ -10,6 +10,11 @@ spec:
         memory: 2Gi
         cpu: 1
   dataVolumeCapacity: 10G
+  podTemplate:
+    resources:
+      requests:
+        memory: 2Gi
+        cpu: 1
   image:
     application: confluentinc/cp-server:7.7.0
     init: confluentinc/confluent-init-container:2.9.0
@@ -71,7 +76,10 @@ spec:
     - transaction.state.log.replication.factor=1
     - confluent.metadata.topic.replication.factor=1
     - confluent.topic.replication.factor=1
+<<<<<<< HEAD
     - confluent.cluster.link.metadata.topic.replication.factor=1
+=======
+>>>>>>> origin/main
     log4j:
     - log4j.logger.io.confluent.rest-utils=DEBUG, stdout
     - log4j.additivity.io.confluent.rest-utils=false
